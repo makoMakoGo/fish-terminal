@@ -1,0 +1,9 @@
+# Some common Readline config settings.
+
+set colored-stats                 on
+set colored-completion-prefix     on
+
+$if clink
+set search-ignore-case            on
+set completion-auto-query-items   on
+$endif

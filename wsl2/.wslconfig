@@ -1,0 +1,10 @@
+[wsl2]
+dnsTunneling=true
+firewall=true
+networkingMode=Mirrored
+dnsProxy=false
+vmIdleTimeout=-1
+
+[experimental]
+hostAddressLoopback=true
+initialAutoProxyTimeout=2000
