@@ -25,25 +25,25 @@ It focuses on:
 ```text
 .
 |-- macos
+|   |-- README.md
 |   `-- ghostty
-|       |-- README.md
 |       `-- config
 |-- windows
 |   |-- cmd
 |   |   |-- .inputrc
-|   |   |-- README.md
 |   |   |-- clink_settings
 |   |   |-- command-processor.reg
 |   |   `-- console-settings.md
 |   |-- git-bash
 |   |   |-- .bash_profile
 |   |   |-- .bashrc
-|   |   `-- README.md
+|   |-- README.md
 |   |-- pwsh
 |   |   `-- Microsoft.PowerShell_profile.ps1
 |   `-- terminal
 |       `-- settings.json
 |-- wsl2
+|   |-- README.md
 |   |-- .wslconfig
 |   `-- ubuntu
 |       |-- etc
