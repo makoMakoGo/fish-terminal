@@ -1,0 +1,11 @@
+<svg width="1280" height="320" viewBox="0 0 1280 320" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1280" height="320" rx="28" fill="#F6F8FA"/>
+  <rect x="48" y="44" width="1184" height="232" rx="20" fill="#FFFFFF" stroke="#D0D7DE" stroke-width="2"/>
+  <circle cx="92" cy="86" r="8" fill="#FF5F57"/>
+  <circle cx="118" cy="86" r="8" fill="#FEBC2E"/>
+  <circle cx="144" cy="86" r="8" fill="#28C840"/>
+  <rect x="72" y="108" width="1136" height="1" fill="#D8DEE4"/>
+  <text x="640" y="164" text-anchor="middle" fill="#24292F" font-family="SFMono-Regular, Consolas, Menlo, Monaco, 'Courier New', monospace" font-size="42" font-weight="700" letter-spacing="1">fish-terminal</text>
+  <text x="640" y="202" text-anchor="middle" fill="#57606A" font-family="SFMono-Regular, Consolas, Menlo, Monaco, 'Courier New', monospace" font-size="18">$ bootstrap --platform windows,wsl2,macos</text>
+  <text x="640" y="236" text-anchor="middle" fill="#0969DA" font-family="SFMono-Regular, Consolas, Menlo, Monaco, 'Courier New', monospace" font-size="16">terminal configs · prompt bootstraps · shell ergonomics</text>
+</svg>

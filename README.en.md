@@ -7,20 +7,20 @@
 </p>
 
 <p align="center">
-  简体中文 | <a href="./README.en.md">English</a>
+  English | <a href="./README.md">简体中文</a>
 </p>
 
-这是我当前终端环境的一份脱敏分享版本。
+A sanitized snapshot of my terminal setup for sharing.
 
-它主要包含：
+It focuses on:
 
-- Windows Terminal 的 profile、快捷键、字体与配色方案
-- PowerShell 提示符初始化与 profile 函数
-- cmd + clink 的注入、readline 与控制台默认设置
-- WSL2 主机配置与 Ubuntu fish 配置
-- macOS Ghostty 的外观与间距设置
+- Windows Terminal profiles, keybindings, fonts, and color schemes
+- PowerShell prompt bootstrap and profile functions
+- cmd with clink injection, readline, and console defaults
+- WSL2 host settings and Ubuntu fish configuration
+- macOS Ghostty appearance and spacing settings
 
-## 目录结构
+## Layout
 
 ```text
 .
@@ -58,9 +58,9 @@
     `-- placeholders.md
 ```
 
-## 说明
+## Notes
 
-- 用户名、私有绝对路径、自定义资源位置、代理地址与密钥都已经替换为占位符。
-- 这里的 Git Bash 配置刻意保持轻量；主要的交互环境仍然是 Windows 上的 PowerShell，以及 WSL2 里的 fish。
-- 这个仓库里的 macOS 终端示例基于 Ghostty。
-- `fish_variables`、history、日志文件以及插件生成的动态内部文件不会提交。
+- Usernames, private absolute paths, custom asset locations, proxy endpoints, and secrets have been replaced with placeholders.
+- Git Bash is intentionally lightweight here. The main interactive setups are PowerShell on Windows and fish inside WSL2.
+- The macOS terminal example in this repo targets Ghostty.
+- Dynamic state files such as `fish_variables`, histories, logs, and generated plugin internals are not committed.
