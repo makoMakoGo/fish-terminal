@@ -1,27 +1,31 @@
 # Placeholders
 
-This repo is meant to be readable first and reusable second.
+仓库中用到的占位符一览。
 
-## Path placeholders
+## 路径
 
-- `<WINDOWS_HOME>`: Windows user home directory
-- `<WSL_HOME>`: WSL user home directory
-- `<WSL_USER>`: WSL username
-- `<CUSTOM_ASSETS_DIR>`: personal icons, wallpapers, and other visual assets
-- `<CLINK_INSTALL_DIR>`: clink installation directory
-- `<GIT_FOR_WINDOWS_INSTALL_DIR>`: Git for Windows installation directory
-- `<CONDA_HOME>`: Miniconda or Conda installation root inside WSL
+| 占位符 | 含义 |
+| --- | --- |
+| `<WINDOWS_HOME>` | Windows 用户主目录 |
+| `<WSL_HOME>` | WSL 用户主目录 |
+| `<WSL_USER>` | WSL 用户名 |
+| `<CUSTOM_ASSETS_DIR>` | 图标、壁纸等个人视觉资源目录 |
+| `<CLINK_INSTALL_DIR>` | clink 安装目录 |
+| `<GIT_FOR_WINDOWS_INSTALL_DIR>` | Git for Windows 安装目录 |
+| `<CONDA_HOME>` | WSL 内 Miniconda / Conda 安装根目录 |
 
-## Tool and secret placeholders
+## 工具与密钥
 
-- `<OH_MY_POSH_BIN>`: local `oh-my-posh` executable path
-- `<OH_MY_POSH_THEME>`: theme file used by `oh-my-posh`
-- `<LOCAL_PROXY_URL>`: local or private proxy endpoint
-- `<GEMINI_API_BASE_URL>`: Gemini-compatible API base URL
-- `<GEMINI_API_KEY>`: Gemini API key
+| 占位符 | 含义 |
+| --- | --- |
+| `<OH_MY_POSH_BIN>` | oh-my-posh 可执行文件路径 |
+| `<OH_MY_POSH_THEME>` | oh-my-posh 主题文件路径 |
+| `<LOCAL_PROXY_URL>` | 本地代理地址 |
+| `<GEMINI_API_BASE_URL>` | Gemini API base URL |
+| `<GEMINI_API_KEY>` | Gemini API key |
 
-## Redaction strategy
+## 脱敏策略
 
-- Keep shell logic, prompt bootstrap, and structure.
-- Replace personally identifying values and machine-specific absolute paths.
-- Keep public installation conventions where they improve readability.
+- 保留 shell 逻辑、提示符启动流程和目录结构。
+- 替换个人身份信息和机器绑定的绝对路径。
+- 公共安装惯例路径保留原样以提高可读性。

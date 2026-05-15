@@ -1,55 +1,33 @@
 # macOS
 
-这个目录存放 macOS 侧的终端配置。
+macOS 侧的终端配置，目前只有 Ghostty 终端模拟器。
 
-目前仓库里公开分享的 macOS 终端层主要是：
+这里分享的是终端表现层（外观、间距、标题栏），不包含 shell 启动脚本。
 
-- `ghostty`：当前在 macOS 上使用的终端模拟器配置
+## 目录
 
-## 目录分工
+| 路径 | 作用 |
+| --- | --- |
+| `ghostty/config` | Ghostty 配置文件 |
 
-- `ghostty/config`：Ghostty 的实际配置文件
-- `ghostty/README.md`：Ghostty 子目录自己的简要说明
+## Ghostty 配置说明
 
-## 当前共享的终端层
+配置位置：`~/.config/ghostty/config`
 
-`ghostty` 是当前在 macOS 上实际使用的终端模拟器配置。这里分享的是终端表现层，而不是整套 shell 启动脚本。
+当前这份配置控制的内容：
 
-它覆盖的内容包括：
+| 配置项 | 值 | 作用 |
+| --- | --- | --- |
+| `theme` | `Catppuccin Latte` | 浅色主题 |
+| `window-padding-x` | `18` | 水平留白 |
+| `window-padding-y` | `12` | 垂直留白 |
+| `window-padding-balance` | `true` | 内容居中分配 padding |
+| `window-padding-color` | `extend` | padding 区域延伸背景色 |
+| `macos-titlebar-style` | `transparent` | 标题栏融入窗口背景 |
+| `adjust-cell-height` | `8%` | 增加行高，改善阅读密度 |
 
-- 主题选择
-- 窗口留白与 padding 平衡
-- 标题栏样式
-- 影响日常阅读体验的终端外观细节
-- 字符单元高度微调
+整体调整方向：宽松留白 + 轻量标题栏 + 适合浅色主题的阅读体验。
 
-## 当前配置的关键信息
+## 不包含
 
-这份 Ghostty 配置当前的重点包括：
-
-- 主题：`Catppuccin Latte`
-- 配置位置：`~/.config/ghostty/config`
-- 调整方向：更宽松的留白、更轻的标题栏观感、更适合浅色主题的阅读密度
-
-如果你打开 `ghostty/config`，会看到它目前主要控制的是：
-
-- `theme`
-- `window-padding-x`
-- `window-padding-y`
-- `window-padding-balance`
-- `window-padding-color`
-- `macos-titlebar-style`
-- `adjust-cell-height`
-
-## 使用方式建议
-
-- 想复用当前 macOS 终端外观，先看 `ghostty/config`
-- 想知道这份 Ghostty 配置的范围和用途，再看 `ghostty/README.md`
-
-## 当前不包含的内容
-
-- shell 启动文件
-- 仅本机使用的 macOS 自动化
-- 未脱敏的机器相关资源与应用路径
-
-这个仓库把 macOS 下的终端模拟器层和 shell 逻辑分开处理，所以这里重点是终端外观与行为，而不是 shell 启动脚本。
+shell 启动文件、macOS 自动化脚本、未脱敏的机器路径。

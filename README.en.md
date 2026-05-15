@@ -1,66 +1,28 @@
 <p align="center">
-  <img src="./docs/banner.svg" alt="fish-terminal banner" width="860" />
-</p>
-
-<p align="center">
-  <code>terminal configs · prompt bootstraps · shell ergonomics</code>
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="./docs/banner-dark.svg">
+    <img src="./docs/banner.svg" alt="fish-terminal banner" width="860">
+  </picture>
 </p>
 
 <p align="center">
   English | <a href="./README.md">简体中文</a>
 </p>
 
-A sanitized snapshot of my terminal setup for sharing.
+My terminal configs, sanitized. Daily drivers are PowerShell on Windows and fish in WSL2; the rest is grouped by platform.
 
-It focuses on:
+## Platforms
 
-- Windows Terminal profiles, keybindings, fonts, and color schemes
-- PowerShell prompt bootstrap and profile functions
-- cmd with clink injection, readline, and console defaults
-- WSL2 host settings and Ubuntu fish configuration
-- macOS Ghostty appearance and spacing settings
+| Platform | Stack | Config |
+| --- | --- | --- |
+| Windows | Terminal · PowerShell · cmd + clink · Git Bash | [`windows/`](./windows) |
+| WSL2 | Ubuntu · fish · oh-my-posh | [`wsl2/`](./wsl2) |
+| macOS | Ghostty | [`macos/`](./macos) |
 
-## Layout
-
-```text
-.
-|-- macos
-|   |-- README.md
-|   `-- ghostty
-|       `-- config
-|-- windows
-|   |-- cmd
-|   |   |-- .inputrc
-|   |   |-- clink_settings
-|   |   |-- command-processor.reg
-|   |   `-- console-settings.md
-|   |-- git-bash
-|   |   |-- .bash_profile
-|   |   |-- .bashrc
-|   |-- README.md
-|   |-- pwsh
-|   |   `-- Microsoft.PowerShell_profile.ps1
-|   `-- terminal
-|       `-- settings.json
-|-- wsl2
-|   |-- README.md
-|   |-- .wslconfig
-|   `-- ubuntu
-|       |-- etc
-|       |   `-- wsl.conf
-|       `-- fish
-|           |-- config.fish
-|           |-- conf.d
-|           |   |-- 99-oh-my-posh.fish
-|           |   `-- rustup.fish
-|           `-- fish_plugins
-`-- docs
-    `-- placeholders.md
-```
+Each subdirectory has its own README with install steps and caveats.
 
 ## Notes
 
-- Usernames, private absolute paths, custom asset locations, proxy endpoints, and secrets have been replaced with placeholders.
-- Git Bash is intentionally lightweight here. The main interactive setups are PowerShell on Windows and fish inside WSL2.
-- The macOS terminal example in this repo targets Ghostty.
-- Dynamic state files such as `fish_variables`, histories, logs, and generated plugin internals are not committed.
+- Usernames, absolute paths, asset locations, proxy addresses, and secrets are replaced with placeholders. See [`docs/placeholders.md`](./docs/placeholders.md).
+- `fish_variables`, history, logs, and plugin-generated state are not committed.
+- Personal reference only — paths and environment are pinned to my machine; don't clone this verbatim.

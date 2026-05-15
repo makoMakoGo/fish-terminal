@@ -1,11 +1,36 @@
 <svg width="1280" height="320" viewBox="0 0 1280 320" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- backdrop -->
   <rect width="1280" height="320" rx="28" fill="#F6F8FA"/>
+
+  <!-- terminal window -->
   <rect x="48" y="44" width="1184" height="232" rx="20" fill="#FFFFFF" stroke="#D0D7DE" stroke-width="2"/>
+
+  <!-- traffic lights -->
   <circle cx="92" cy="86" r="8" fill="#FF5F57"/>
   <circle cx="118" cy="86" r="8" fill="#FEBC2E"/>
   <circle cx="144" cy="86" r="8" fill="#28C840"/>
+
+  <!-- tab label -->
+  <text x="1208" y="91" text-anchor="end" fill="#8C959F" font-family="SFMono-Regular, Consolas, Menlo, Monaco, 'Courier New', monospace" font-size="14">~ — fish@terminal</text>
+
+  <!-- separator -->
   <rect x="72" y="108" width="1136" height="1" fill="#D8DEE4"/>
-  <text x="640" y="164" text-anchor="middle" fill="#24292F" font-family="SFMono-Regular, Consolas, Menlo, Monaco, 'Courier New', monospace" font-size="42" font-weight="700" letter-spacing="1">fish-terminal</text>
-  <text x="640" y="202" text-anchor="middle" fill="#57606A" font-family="SFMono-Regular, Consolas, Menlo, Monaco, 'Courier New', monospace" font-size="18">$ bootstrap --platform windows,wsl2,macos</text>
-  <text x="640" y="236" text-anchor="middle" fill="#0969DA" font-family="SFMono-Regular, Consolas, Menlo, Monaco, 'Courier New', monospace" font-size="16">terminal configs · prompt bootstraps · shell ergonomics</text>
+
+  <!-- title row: fish icon + wordmark, centered -->
+  <g transform="translate(454, 138)">
+    <!-- fish icon, right-facing -->
+    <g>
+      <path d="M 6,18 L 0,8 L 0,28 Z" fill="#0969DA"/>
+      <ellipse cx="20" cy="18" rx="14" ry="10" fill="#0969DA"/>
+      <circle cx="28" cy="14" r="2" fill="#FFFFFF"/>
+    </g>
+    <!-- wordmark -->
+    <text x="46" y="30" fill="#24292F" font-family="SFMono-Regular, Consolas, Menlo, Monaco, 'Courier New', monospace" font-size="42" font-weight="700" letter-spacing="1">fish-terminal</text>
+  </g>
+
+  <!-- subtitle: platform list (no fake command) -->
+  <text x="640" y="212" text-anchor="middle" fill="#57606A" font-family="SFMono-Regular, Consolas, Menlo, Monaco, 'Courier New', monospace" font-size="18">windows · wsl2 · macos</text>
+
+  <!-- tagline -->
+  <text x="640" y="244" text-anchor="middle" fill="#0969DA" font-family="SFMono-Regular, Consolas, Menlo, Monaco, 'Courier New', monospace" font-size="16">terminal configs · prompt bootstraps · shell ergonomics</text>
 </svg>
