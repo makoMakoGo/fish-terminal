@@ -1,0 +1,15 @@
+# fish dynamic state
+fish_variables
+fish_history
+*.log
+
+# OS
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Editors
+.vscode/
+.idea/
+*.swp
+*~
